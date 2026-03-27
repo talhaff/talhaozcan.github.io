@@ -2,7 +2,7 @@
 
 Bu proje, bir bilgisayar mühendisi adayı olarak geliştirdiğim sistemleri, teknik yetkinliklerimi ve vizyonumu sergileyen profesyonel bir portfolyo web sitesidir. Yazılım geliştirme süreçlerinde **SOLID** prensipleri ve **Temiz Kod (Clean Code)** standartları esas alınarak inşa edilmiştir.
 
-🚀 **Canlı Demo:
+🚀 **Canlı Demo: https://talhaff.github.io/
  
 ## 🛠️ Teknik Yığın (Tech Stack)
 
