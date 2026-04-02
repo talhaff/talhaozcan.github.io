@@ -26,8 +26,6 @@ const Hero = () => {
           <span className="inline-block px-4 py-1.5 mb-6 text-sm font-bold tracking-[0.2em] text-blue-600 bg-blue-50 border border-blue-100 rounded-full uppercase">
             {PERSONAL_INFO.university}
           </span>
-          
-          // Hero.jsx içindeki h1 kısmını bul ve şununla değiştir:
 
           <h1 className="text-6xl md:text-9xl font-extrabold tracking-tighter text-slate-900 mb-8 leading-tight">
             Tasarla , <span className="text-blue-600">Kodla </span> <br />

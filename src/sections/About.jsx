@@ -48,7 +48,7 @@ const About = () => {
           <div className="space-y-8">
             <div className="border-l-4 border-blue-600 pl-6">
               <h4 className="font-bold text-slate-900">Lisans Derecesi</h4>
-              <p className="text-sm text-slate-500 mb-2">{PERSONAL_INFO.university} • 2021 - 2025</p>
+              <p className="text-sm text-slate-500 mb-2">{PERSONAL_INFO.university} • 2022 - 2026</p>
               <p className="text-sm italic text-slate-400">Kontrol Teorisi, Veri Madenciliği, Derleyici Tasarımı...</p>
             </div>
             <div className="border-l-4 border-slate-300 pl-6 opacity-60">
