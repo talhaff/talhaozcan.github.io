@@ -8,30 +8,49 @@ const ProjectsSection = () => {
     hidden: { opacity: 0 },
     show: {
       opacity: 1,
-      transition: { staggerChildren: 0.2 }
+      transition: { staggerChildren: 0.15 }
     }
   };
 
   const item = {
     hidden: { opacity: 0, y: 30 },
-    show: { opacity: 1, y: 0, transition: { duration: 0.5 } }
+    show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } }
   };
 
   return (
-    <section id="projects" className="py-32 bg-white">
+    <section id="projects" className="py-32">
       <div className="max-w-6xl mx-auto px-6">
-        <div className="mb-20">
-          <motion.span initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} className="text-blue-600 font-bold tracking-widest uppercase text-sm">
-            Seçilmiş İşler
-          </motion.span>
-          <motion.h2 initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} className="text-4xl md:text-5xl font-extrabold mt-4 text-slate-900 tracking-tight">
-            Mühendislik Çözümleri & <br /> Dijital Ürünler
-          </motion.h2>
+        <div className="flex flex-col md:flex-row md:items-end justify-between mb-20 gap-8">
+          <div>
+            <motion.span 
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              className="text-blue-400 font-bold tracking-[0.3em] uppercase text-sm"
+            >
+              Portfolyo
+            </motion.span>
+            <motion.h2 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              className="text-4xl md:text-6xl font-extrabold mt-4 text-white tracking-tighter leading-[1.1]"
+            >
+              Mühendislik Çözümleri & <br /> <span className="text-gradient">Dijital Ürünler</span>
+            </motion.h2>
+          </div>
+          <p className="text-slate-400 max-w-md font-light leading-relaxed">
+            Karmaşık problemleri basit ve etkili yazılım çözümlerine dönüştürdüğüm projelerimden bazıları.
+          </p>
         </div>
 
-        <motion.div variants={container} initial="hidden" whileInView="show" viewport={{ once: true }} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <motion.div 
+          variants={container} 
+          initial="hidden" 
+          whileInView="show" 
+          viewport={{ once: true, margin: "-100px" }} 
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+        >
           {PROJECTS.map((project, index) => (
-            <motion.div key={index} variants={item}>
+            <motion.div key={index} variants={item} className="h-full">
               <ProjectCard project={project} />
             </motion.div>
           ))}
