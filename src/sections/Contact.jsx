@@ -27,12 +27,7 @@ const Contact = () => {
             Projeniz hakkında konuşmaya ne dersiniz?
           </p>
           
-          <div className="mt-12 flex items-center gap-4">
-            <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
-            <p className="text-xs font-black uppercase tracking-widest text-slate-400">
-              Şu an Yeni İş Birliklerine Açığım.
-            </p>
-          </div>
+          
         </motion.div>
 
         {/* Right Side: Interactive Blocks */}
