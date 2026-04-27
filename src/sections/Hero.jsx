@@ -5,13 +5,8 @@ import { PERSONAL_INFO } from '../data/portfolio';
 const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center pt-20">
-      {/* Background Mesh Gradients */}
-      <div className="absolute inset-0 -z-10">
-        <div className="absolute top-[10%] left-[10%] w-[40%] h-[40%] bg-blue-600/10 rounded-full blur-[120px] animate-pulse" />
-        <div className="absolute bottom-[10%] right-[10%] w-[40%] h-[40%] bg-indigo-600/10 rounded-full blur-[120px] animate-pulse delay-1000" />
-      </div>
-
       <div className="max-w-6xl mx-auto px-6 relative z-10">
+
         <div className="flex flex-col items-center text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
