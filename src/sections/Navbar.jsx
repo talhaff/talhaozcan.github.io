@@ -139,31 +139,60 @@ const Navbar = () => {
             initial="initial"
             animate="animate"
             exit="exit"
-            className="fixed inset-0 bg-slate-950 z-[-1] origin-top flex flex-col items-center justify-center pointer-events-auto"
+            className="fixed inset-0 bg-slate-950/95 backdrop-blur-2xl z-[-1] origin-top flex flex-col items-center justify-center pointer-events-auto"
           >
+            {/* Arka Plan Süslemeleri */}
+            <div className="absolute top-1/4 -left-20 w-64 h-64 bg-blue-600/10 rounded-full blur-[120px]" />
+            <div className="absolute bottom-1/4 -right-20 w-64 h-64 bg-purple-600/10 rounded-full blur-[120px]" />
+
             <motion.div 
               variants={containerVariants}
               initial="initial"
               animate="open"
               exit="initial"
-              className="flex flex-col items-center gap-8"
+              className="flex flex-col items-center gap-10 relative z-10"
             >
               {NAV_LINKS.map((link, index) => (
-                <div key={index} className="overflow-hidden">
+                <div key={index} className="overflow-hidden group">
                   <motion.a 
                     variants={linkVariants}
                     href={link.href}
                     onClick={() => setIsOpen(false)}
-                    className="text-4xl md:text-6xl font-black text-white hover:text-blue-500 transition-colors uppercase tracking-tighter"
+                    className="relative text-3xl font-black text-white/40 hover:text-white transition-all duration-500 uppercase tracking-[-0.02em] flex items-center gap-4 group"
                   >
+                    <span className="text-xs font-black text-blue-500 opacity-0 group-hover:opacity-100 transition-opacity">0{index + 1}</span>
                     {link.label}
+                    <div className="absolute -bottom-2 left-0 w-0 h-1 bg-gradient-to-r from-blue-600 to-transparent group-hover:w-full transition-all duration-500" />
                   </motion.a>
                 </div>
               ))}
+              
+              <motion.div variants={linkVariants} className="pt-10">
+                <a 
+                  href="#contact"
+                  onClick={() => setIsOpen(false)}
+                  className="px-10 py-4 glass rounded-full text-white text-[10px] font-black uppercase tracking-[0.2em] border border-white/10"
+                >
+                  Proje Başlat
+                </a>
+              </motion.div>
+            </motion.div>
+
+            {/* Alt Bilgi */}
+            <motion.div 
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 1 }}
+              className="absolute bottom-12 flex gap-8 text-[10px] font-black uppercase tracking-widest text-slate-500"
+            >
+              <a href="#" className="hover:text-blue-400 transition-colors">LinkedIn</a>
+              <a href="#" className="hover:text-blue-400 transition-colors">GitHub</a>
+              <a href="#" className="hover:text-blue-400 transition-colors">Instagram</a>
             </motion.div>
           </motion.div>
         )}
       </AnimatePresence>
+
     </motion.nav>
   );
 };
