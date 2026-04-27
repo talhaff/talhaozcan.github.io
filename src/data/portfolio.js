@@ -2,7 +2,8 @@ export const PERSONAL_INFO = {
   name: "Talha Özcan",
   title: "Bilgisayar Mühendisi",
   university: "İnönü Üniversitesi",
-  description: "Ölçeklenebilir backend mimarileri kurgulayan, veri odaklı çözümler üreten ve modern web teknolojileriyle uçtan uca dijital deneyimler tasarlayan bir mühendis adayıyım.",
+  gpa: "3.25",
+  description: "Yüksek performanslı backend mimarileri kurgulayan, modern mobil ve web ekosistemleri inşa eden bir mühendis adayıyım.",
   github: "https://github.com/talhaff",
   linkedin: "https://www.linkedin.com/in/talha-özcan",
   email: "talhaozcanf@gmail.com"
@@ -17,38 +18,46 @@ export const NAV_LINKS = [
 export const PROJECTS = [
   {
     id: 1,
-    title: "Otel Yönetim Ekosistemi",
-    description: "Java Spring Boot ve PostgreSQL mimarisi üzerine kurulu, gerçek zamanlı rezervasyon ve operasyon yönetimi sağlayan kurumsal çözüm.",
-    tags: ["Java", "Spring Boot", "PostgreSQL", "Microservices"],
-    github: "https://github.com/talhaff/otel-yonetim-sistemi",
+    title: "Arya Sanat Akademi",
+    description: "Arya Sanat Akademi için geliştirilmiş, kurumsal kimliği yansıtan modern ve yüksek performanslı web platformu.",
+    tags: ["React", "Next.js", "SEO", "Tailwind"],
+    github: "https://aryasanatakademim.com",
   },
   {
     id: 2,
-    title: "Taptaze SaaS Platformu",
-    description: "Restoranlar için bulut tabanlı QR menü ve sipariş takip sistemi. Node.js ve MongoDB Atlas ile yüksek erişilebilirlik.",
-    tags: ["Node.js", "MongoDB", "Express", "React"],
-    github: "https://github.com/talhaozcan/taptaze",
+    title: "Taptaze Mobil Uygulaması",
+    description: "Getir ve Yemeksepeti tarzında, manav ürünlerine odaklanan uçtan uca mobil sipariş ve teslimat yönetim sistemi.",
+    tags: ["React Native", "Node.js", "MongoDB", "Socket.io"],
+    github: "https://github.com/talhaff/taptaze-app",
   },
   {
     id: 3,
-    title: "3D Estetik Çalışma Alanı",
-    description: "Blender ile modellenmiş, minimalist ve yüksek detaylı 3D ortam tasarımı. Işıklandırma ve materyal optimizasyonu odaklı çalışma.",
-    tags: ["Blender", "3D Design", "Lighting"],
+    title: "Personal Premium Portfolio",
+    description: "Şu an incelediğiniz, senior seviye tasarım prensipleri ve modern animasyonlarla kurgulanmış web portfolyosu.",
+    tags: ["React", "Framer Motion", "Tailwind 4", "Vite"],
     github: "#",
+  },
+  {
+    id: 4,
+    title: "Otel Yönetim Ekosistemi",
+    description: "Java Spring Boot ve PostgreSQL mimarisi üzerine kurulu, kurumsal rezervasyon ve operasyon yönetim sistemi.",
+    tags: ["Java", "Spring Boot", "PostgreSQL"],
+    github: "https://github.com/talhaff/otel-yonetim-sistemi",
   }
 ];
 
 export const SKILLS = [
   {
-    category: "Frontend Geliştirme",
+    category: "Frontend & Web",
     items: ["React & Next.js", "Tailwind CSS 4", "Framer Motion", "TypeScript"]
   },
   {
-    category: "Backend & Mimari",
-    items: ["Node.js / Express", "Java / Spring Boot", "PostgreSQL / MongoDB", "Sistem Tasarımı"]
+    category: "Backend & Mobil",
+    items: ["Node.js / Express", "Java / Spring Boot", "PostgreSQL / MongoDB", "React Native"]
   },
   {
-    category: "Araçlar & Teori",
-    items: ["Docker & Linux", "Git & CI/CD", "Veri Madenciliği", "Derleyici Tasarımı"]
+    category: "Araçlar & Mimari",
+    items: ["Docker & Linux", "Git & CI/CD", "Sistem Tasarımı", "Cloud Integration"]
   }
-];
+];
+

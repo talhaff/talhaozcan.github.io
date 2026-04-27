@@ -26,12 +26,12 @@ const About = () => {
           </h2>
           <div className="text-slate-400 leading-relaxed space-y-6 text-lg font-light">
             <p>
-              İnönü Üniversitesi Bilgisayar Mühendisliği 4. sınıf öğrencisiyim. Mühendisliğin sadece kod yazmak değil, 
-              <strong className="text-white font-semibold"> sürdürülebilir ve verimli sistemler</strong> kurmak olduğuna inanıyorum.
+              İnönü Üniversitesi Bilgisayar Mühendisliği son sınıf öğrencisiyim. Mühendisliği sadece kod yazmak değil, 
+              <strong className="text-white font-semibold"> sürdürülebilir, ölçeklenebilir ve verimli sistemler</strong> kurmak olduğuna inanıyorum.
             </p>
             <p>
-              Akademik süreçte kazandığım <strong className="text-white font-semibold">Compiler Design, Görüntü Analizi ve Veri Madenciliği</strong> gibi teorik bilgileri, 
-              pratik projelerle birleştirmeye odaklanıyorum.
+              Teorik bilgiyi pratik dünyadaki gerçek problemlerle birleştirmeye odaklanıyorum. Özellikle 
+              <strong className="text-white font-semibold"> yüksek performanslı backend sistemleri ve modern mobil deneyimler</strong> üzerine uzmanlaşıyorum.
             </p>
             
             {/* Sosyal Linkler */}
@@ -71,9 +71,12 @@ const About = () => {
             <div className="relative pl-8 border-l-2 border-blue-600">
               <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-blue-600 border-4 border-slate-900" />
               <h4 className="font-bold text-white text-lg">Lisans Derecesi</h4>
-              <p className="text-sm text-blue-400 font-medium mb-3">{PERSONAL_INFO.university} • 2022 - 2026</p>
+              <div className="flex items-center gap-3 mb-3">
+                <p className="text-sm text-blue-400 font-medium">{PERSONAL_INFO.university} • 2022 - 2026</p>
+                <span className="px-2 py-0.5 bg-blue-500/10 border border-blue-500/20 rounded text-[10px] font-bold text-blue-300">GPA: {PERSONAL_INFO.gpa}</span>
+              </div>
               <p className="text-sm text-slate-400 font-light leading-relaxed">
-                Kontrol Teorisi, Veri Madenciliği, Derleyici Tasarımı ve Görüntü Analizi konularında uzmanlık.
+                Yazılım mimarisi, veri yapıları ve modern mühendislik prensipleri üzerine yoğunlaşmış akademik süreç.
               </p>
             </div>
             
@@ -82,7 +85,7 @@ const About = () => {
               <h4 className="font-bold text-white text-lg">Intern Software Developer</h4>
               <p className="text-sm text-slate-400 font-medium mb-3">Staj Programı • 2026</p>
               <p className="text-sm text-slate-400 font-light leading-relaxed">
-                Backend sistemleri ve 3D görselleştirme teknolojileri üzerine çalışmalar.
+                Full-stack uygulama geliştirme, veritabanı optimizasyonu ve mobil uygulama süreçleri üzerine çalışmalar.
               </p>
             </div>
           </div>
@@ -94,3 +97,4 @@ const About = () => {
 };
 
 export default About;
+
