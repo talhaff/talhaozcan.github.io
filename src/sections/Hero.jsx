@@ -4,7 +4,7 @@ import { PERSONAL_INFO } from '../data/portfolio';
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center pt-20">
+    <section className="relative min-h-screen flex items-center justify-center pt-40">
       <div className="max-w-6xl mx-auto px-6 relative z-10">
 
         <div className="flex flex-col items-center text-center">
@@ -13,14 +13,7 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
           >
-            <motion.span 
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.2 }}
-              className="inline-block px-5 py-2 mb-12 text-[10px] font-black tracking-[0.4em] text-blue-400 bg-blue-500/5 border border-blue-500/20 rounded-full uppercase backdrop-blur-md"
-            >
-              {PERSONAL_INFO.university}
-            </motion.span>
+            
 
             <h1 className="text-[14vw] md:text-[9vw] lg:text-[140px] font-black tracking-[-0.05em] text-white mb-10 leading-[0.8] flex flex-col items-center">
               <span className="opacity-40 hover:opacity-100 transition-opacity duration-700 cursor-default">Tasarla</span>

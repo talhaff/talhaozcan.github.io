@@ -32,19 +32,27 @@ export const PROJECTS = [
   },
   {
     id: 3,
+    title: "Fabrika Maliyet Hesaplama",
+    description: "Senkroon Yazılım bünyesinde geliştirdiğim, fabrikalar için özelleştirilmiş web tabanlı maliyet ve verimlilik hesaplama aracı.",
+    tags: ["React", ".NET", "PostgreSQL", "ERP/CRM"],
+    github: "#",
+  },
+  {
+    id: 4,
     title: "Personal Premium Portfolio",
     description: "Şu an incelediğiniz, senior seviye tasarım prensipleri ve modern animasyonlarla kurgulanmış web portfolyosu.",
     tags: ["React", "Framer Motion", "Tailwind 4", "Vite"],
     github: "#",
   },
   {
-    id: 4,
+    id: 5,
     title: "Otel Yönetim Ekosistemi",
     description: "Java Spring Boot ve PostgreSQL mimarisi üzerine kurulu, kurumsal rezervasyon ve operasyon yönetim sistemi.",
     tags: ["Java", "Spring Boot", "PostgreSQL"],
     github: "https://github.com/talhaff/otel-yonetim-sistemi",
   }
 ];
+
 
 export const SKILLS = [
   {

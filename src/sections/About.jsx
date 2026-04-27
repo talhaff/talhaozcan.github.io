@@ -83,11 +83,12 @@ const About = () => {
             <div className="relative pl-8 border-l-2 border-slate-700">
               <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-slate-700 border-4 border-slate-900" />
               <h4 className="font-bold text-white text-lg">Intern Software Developer</h4>
-              <p className="text-sm text-slate-400 font-medium mb-3">Staj Programı • 2026</p>
+              <p className="text-sm text-blue-400 font-medium mb-3">Senkroon Yazılım • 2026 - Halen</p>
               <p className="text-sm text-slate-400 font-light leading-relaxed">
-                Full-stack uygulama geliştirme, veritabanı optimizasyonu ve mobil uygulama süreçleri üzerine çalışmalar.
+                ERP ve CRM sistemleri üzerine geliştirme süreçleri. Fabrikalar için web tabanlı maliyet hesaplama ve verimlilik analizi uygulamaları tasarımı.
               </p>
             </div>
+
           </div>
         </motion.div>
 
