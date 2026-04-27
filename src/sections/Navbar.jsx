@@ -185,9 +185,8 @@ const Navbar = () => {
               transition={{ delay: 1 }}
               className="absolute bottom-12 flex gap-8 text-[10px] font-black uppercase tracking-widest text-slate-500"
             >
-              <a href="#" className="hover:text-blue-400 transition-colors">LinkedIn</a>
-              <a href="#" className="hover:text-blue-400 transition-colors">GitHub</a>
-              <a href="#" className="hover:text-blue-400 transition-colors">Instagram</a>
+              <a href="https://www.linkedin.com/in/talha-özcan" className="hover:text-blue-400 transition-colors">LinkedIn</a>
+              <a href="https://github.com/talhaff" className="hover:text-blue-400 transition-colors">GitHub</a>
             </motion.div>
           </motion.div>
         )}
@@ -197,4 +196,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Navbar;
