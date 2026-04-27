@@ -4,9 +4,9 @@ import { SKILLS } from '../data/portfolio';
 
 const Skills = () => {
   return (
-    <section id="skills" className="py-32 relative overflow-hidden">
+    <section id="skills" className="py-20 md:py-32 relative overflow-hidden">
       <div className="max-w-6xl mx-auto px-6 relative z-10">
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-20 gap-8">
+        <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 md:mb-20 gap-8">
           <div>
             <motion.span 
               initial={{ opacity: 0, x: -20 }}

@@ -4,8 +4,8 @@ import { PERSONAL_INFO } from '../data/portfolio';
 
 const About = () => {
   return (
-    <section id="about" className="max-w-6xl mx-auto px-6 py-32">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
+    <section id="about" className="max-w-6xl mx-auto px-6 py-20 md:py-32">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-center">
         
         {/* Metin Alanı */}
         <motion.div 

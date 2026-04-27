@@ -62,7 +62,7 @@ const Navbar = () => {
       transition={{ duration: 0.35, ease: "easeInOut" }}
       className="fixed top-0 left-0 right-0 z-[100] pointer-events-none"
     >
-      <div className="max-w-7xl mx-auto px-4 md:px-6 py-6 md:py-8 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-4 md:px-6 py-4 md:py-8 flex items-center justify-between">
         
         {/* Bağımsız Logo */}
         <motion.a 

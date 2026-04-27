@@ -4,8 +4,8 @@ import { PERSONAL_INFO } from '../data/portfolio';
 
 const Contact = () => {
   return (
-    <section id="contact" className="py-40 px-6 max-w-7xl mx-auto">
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+    <section id="contact" className="py-24 md:py-40 px-6 max-w-7xl mx-auto">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-20 items-center">
         
         {/* Left Side: Impactful Typography */}
         <motion.div

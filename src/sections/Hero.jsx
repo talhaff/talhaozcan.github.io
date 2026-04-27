@@ -4,7 +4,7 @@ import { PERSONAL_INFO } from '../data/portfolio';
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center pt-40">
+    <section className="relative min-h-screen flex items-center justify-center pt-16 md:pt-40">
       <div className="max-w-6xl mx-auto px-6 relative z-10">
 
         <div className="flex flex-col items-center text-center">

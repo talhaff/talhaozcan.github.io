@@ -18,9 +18,9 @@ const ProjectsSection = () => {
   };
 
   return (
-    <section id="projects" className="py-32">
+    <section id="projects" className="py-20 md:py-32">
       <div className="max-w-6xl mx-auto px-6">
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-20 gap-8">
+        <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 md:mb-20 gap-8">
           <div>
             <motion.span 
               initial={{ opacity: 0, x: -20 }}
