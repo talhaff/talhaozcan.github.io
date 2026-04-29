@@ -62,7 +62,7 @@ const Navbar = () => {
       transition={{ duration: 0.35, ease: "easeInOut" }}
       className="fixed top-0 left-0 right-0 z-[100] pointer-events-none"
     >
-      <div className="max-w-7xl mx-auto px-4 md:px-6 py-4 md:py-8 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-4 md:px-6 py-3 md:py-8 flex items-center justify-between">
         
         {/* Bağımsız Logo */}
         <motion.a 
@@ -74,7 +74,7 @@ const Navbar = () => {
           <img 
             src="/Talha-Ozcan-logo.png" 
             alt="Logo" 
-            className={`h-12 md:h-20 w-auto object-contain rounded-full border-2 border-white/5 hover:border-blue-500/30 hover:scale-105 transition-all duration-500 shadow-2xl shadow-blue-500/10 ${isScrolled ? 'opacity-80' : 'opacity-100'}`} 
+            className={`h-16 md:h-20 w-auto object-contain rounded-full border-2 border-white/5 hover:border-blue-500/30 hover:scale-105 transition-all duration-500 shadow-2xl shadow-blue-500/10 ${isScrolled ? 'opacity-80' : 'opacity-100'}`} 
           />
         </motion.a>
 
@@ -104,7 +104,7 @@ const Navbar = () => {
           {/* Mobile Menu Button */}
           <button 
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden flex items-center justify-center w-12 h-12 glass rounded-full border border-white/10 active:scale-90 transition-transform"
+            className="md:hidden flex items-center justify-center w-14 h-14 glass rounded-full border border-white/10 active:scale-90 transition-transform"
           >
             <div className="w-5 h-4 relative flex flex-col justify-between">
               <motion.span 
@@ -124,7 +124,7 @@ const Navbar = () => {
           
           <a 
             href="#contact" 
-            className="md:hidden px-5 py-3 bg-white text-slate-950 rounded-full text-[10px] font-black uppercase tracking-widest"
+            className="md:hidden px-6 py-3.5 bg-white text-slate-950 rounded-full text-[10px] font-black uppercase tracking-widest"
           >
             İletişim
           </a>
@@ -158,11 +158,11 @@ const Navbar = () => {
                     variants={linkVariants}
                     href={link.href}
                     onClick={() => setIsOpen(false)}
-                    className="relative text-3xl font-black text-white/40 hover:text-white transition-all duration-500 uppercase tracking-[-0.02em] flex items-center gap-4 group"
+                    className="relative text-3xl font-black text-white/40 hover:text-white transition-all duration-500 uppercase tracking-[-0.02em] flex items-center justify-center group"
                   >
-                    <span className="text-xs font-black text-blue-500 opacity-0 group-hover:opacity-100 transition-opacity">0{index + 1}</span>
+                    <span className="absolute right-[calc(100%+1.5rem)] text-xs font-black text-blue-500 opacity-0 group-hover:opacity-100 transition-all duration-500 translate-x-4 group-hover:translate-x-0">0{index + 1}</span>
                     {link.label}
-                    <div className="absolute -bottom-2 left-0 w-0 h-1 bg-gradient-to-r from-blue-600 to-transparent group-hover:w-full transition-all duration-500" />
+                    <div className="absolute -bottom-2 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-blue-600 to-transparent scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-center" />
                   </motion.a>
                 </div>
               ))}

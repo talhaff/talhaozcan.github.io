@@ -32,10 +32,10 @@ export const PROJECTS = [
   },
   {
     id: 3,
-    title: "Fabrika Maliyet Hesaplama",
-    description: "Senkroon Yazılım bünyesinde geliştirdiğim, fabrikalar için özelleştirilmiş web tabanlı maliyet ve verimlilik hesaplama aracı.",
+    title: "Endüstriyel Maliyet & Teklif Yönetimi",
+    description: "Senkroon Yazılım bünyesinde geliştirdiğim, fabrikalar için özelleştirilmiş maliyet analizi, verimlilik hesaplama ve otomatik teklif oluşturma platformu.",
     tags: ["React", ".NET", "PostgreSQL", "ERP/CRM"],
-    github: "#",
+    github: "https://github.com/talhaff/MaliyetHesapla_V2",
   },
   {
     id: 4,
