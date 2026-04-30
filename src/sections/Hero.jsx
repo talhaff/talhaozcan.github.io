@@ -1,10 +1,13 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { PERSONAL_INFO } from '../data/portfolio';
+import { useTheme } from '../ThemeContext';
 
 const Hero = () => {
+  const { theme } = useTheme();
+
   return (
-    <section className="relative min-h-screen flex items-center justify-center pt-16 md:pt-40">
+    <section className="relative min-h-screen flex items-center justify-center pt-12 md:pt-28">
       <div className="max-w-6xl mx-auto px-6 relative z-10">
 
         <div className="flex flex-col items-center text-center">
@@ -15,17 +18,17 @@ const Hero = () => {
           >
             
 
-            <h1 className="text-[14vw] md:text-[9vw] lg:text-[140px] font-black tracking-[-0.05em] text-white mb-6 md:mb-10 leading-[0.8] flex flex-col items-center">
+            <h1 className={`text-[14vw] md:text-[9vw] lg:text-[140px] font-black tracking-[-0.05em] mb-6 md:mb-10 leading-[0.8] flex flex-col items-center ${theme === 'light' ? 'text-slate-900' : 'text-white'}`}>
               <span className="opacity-30 hover:opacity-100 transition-opacity duration-700 cursor-default">Tasarla</span>
               <span className="text-gradient py-2 md:py-4 relative">
                 Kodla
                 <div className="absolute -inset-2 bg-blue-500/10 blur-2xl -z-10 rounded-full opacity-0 hover:opacity-100 transition-opacity" />
               </span>
-              <span className="italic font-thin text-slate-700 hover:text-slate-400 transition-colors duration-700 cursor-default">Yayınla</span>
+              <span className={`italic font-thin transition-colors duration-700 cursor-default ${theme === 'light' ? 'text-slate-300 hover:text-slate-500' : 'text-slate-700 hover:text-slate-400'}`}>Yayınla</span>
             </h1>
 
             <p className="text-sm md:text-xl text-slate-500 max-w-2xl mx-auto leading-relaxed mb-10 md:mb-16 font-light tracking-wide px-10 md:px-0">
-              Merhaba, ben <span className="text-white font-medium border-b border-blue-500/30">{PERSONAL_INFO.name}</span>. 
+              Merhaba, ben <span className={`font-medium border-b border-blue-500/30 ${theme === 'light' ? 'text-slate-900' : 'text-white'}`}>{PERSONAL_INFO.name}</span>. 
               <br className="hidden md:block" />
               <span className="opacity-80">{PERSONAL_INFO.description}</span>
             </p>
@@ -35,7 +38,7 @@ const Hero = () => {
                 whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.98 }}
                 href="#projects" 
-                className="w-[70%] sm:w-auto px-8 md:px-12 py-3.5 md:py-5 bg-white text-slate-950 rounded-2xl font-black uppercase text-[10px] md:text-xs tracking-widest transition-all shadow-[0_0_40px_rgba(255,255,255,0.05)]"
+                className="w-[70%] sm:w-auto px-8 md:px-12 py-3.5 md:py-5 bg-slate-950 text-white dark:bg-white dark:text-slate-950 rounded-2xl font-black uppercase text-[10px] md:text-xs tracking-widest transition-all shadow-xl"
               >
                 Projeleri Gör
               </motion.a>
@@ -44,7 +47,7 @@ const Hero = () => {
                 whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.98 }}
                 href="#about" 
-                className="w-[70%] sm:w-auto px-8 md:px-12 py-3.5 md:py-5 glass text-white rounded-2xl font-black uppercase text-[10px] md:text-xs tracking-widest transition-all border border-white/10"
+                className={`w-[70%] sm:w-auto px-8 md:px-12 py-3.5 md:py-5 glass rounded-2xl font-black uppercase text-[10px] md:text-xs tracking-widest transition-all border ${theme === 'light' ? 'text-slate-900 border-slate-200' : 'text-white border-white/10'}`}
               >
                 Hikayem
               </motion.a>
